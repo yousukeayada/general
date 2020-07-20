@@ -1,0 +1,18 @@
+/* @theme cs29fine */
+
+@import 'gaia';
+
+section {
+    background-color: aquamarine;
+    background-image: url("./FINE.png"),
+    linear-gradient(45deg, lightcyan, white);
+    background-repeat: no-repeat;
+    background-position: top right,right;
+    background-size: 10%,100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.content ul {
+    opacity: 0.3;
+}
