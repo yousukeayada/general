@@ -3,6 +3,8 @@
 @import 'gaia';
 
 section {
+    padding: 30px;
+    
     background-color: aquamarine;
     background-image: url("https://yousukeayada.github.io/general/assets/img/FINE.png"),
     linear-gradient(45deg, lightcyan, white);
