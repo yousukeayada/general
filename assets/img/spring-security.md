@@ -1,4 +1,13 @@
 ```plantuml
+interface UserDetails {
+    - getAuthorities()
+    - getPassword()
+    - getUsername()
+    - isAccountNonExpired()
+    - isAccountNonLocked()
+    - isCredentialsNonExpired()
+    - isEnabled()
+}
 class User implements UserDetails {
     - username
     - password
@@ -8,10 +17,13 @@ class User implements UserDetails {
     - accountNonLocked
     - authorities
 }
-note right of User
+note right of UserDetails
 username, password, authorities のみの
 コンストラクタもある
 end note
+class UserDetailsImpl implements UserDetails {
+
+}
 
 
 class LoginUser {
